@@ -3,6 +3,7 @@ package deqo.salm.MySimpleStack;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
 
 import java.util.EmptyStackException;
 
@@ -10,12 +11,12 @@ import static org.junit.Assert.*;
 
 public class SimpleStackImplTest {
 
-    SimpleStack simpleStack;
+    private SimpleStack simpleStack;
 
     @Before
     public void setUp() throws Exception {
         simpleStack = new SimpleStackImpl();
-        System.out.println("Je suis executé avant chaque test \n");
+        System.out.println("Je susi executé avant chaque test \n");
     }
 
     @Test
@@ -92,4 +93,6 @@ public class SimpleStackImplTest {
     public void testPopEmptyStackException() {
         simpleStack.pop();
     }
+
+
 }
